@@ -146,10 +146,19 @@
     position: absolute;
     width: 100vw;
     height: 100vh;
-    background-image: url(./img/back.jpg)!important;
-    background-position: center;
+    /* background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
+    overflow: hidden;
+}
+
+.background-image
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
 }
 
 /* .navbar-cus
@@ -172,7 +181,8 @@
 
 .nav-link
 {
-    color: whitesmoke !important;
+    color: rgb(255, 255, 255) !important;
+    font-weight: bold;
     padding: 1rem 3rem !important;
 }
 .navbar .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
