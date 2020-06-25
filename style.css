@@ -578,7 +578,8 @@ html {
 
 .ml-text-small
 {
-  font-size: 2.5vh !important;
+  font-size: 2.7vh !important;
+  padding-bottom: 7px;
 }
 
 .skill-names
