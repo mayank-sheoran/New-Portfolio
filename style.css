@@ -8,7 +8,7 @@
 
 body
 {
-  background-color: black !important;
+  background-color: whitesmoke !important;
 }
 
 
@@ -16,12 +16,12 @@ body
 .website
 {
     overflow-x: hidden;
-    position: relative;
+    position: relative !important;
 }
 
 .header-cus
 {
-    position: absolute;
+    position: relative !important;
     display: flex;
     flex-direction: column;
     width: 100vw;
@@ -31,6 +31,17 @@ body
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+.typed-cus
+{
+  /* font-family: 'Blinker', sans-serif !important;  */
+  /* font-family: 'Philosopher', sans-serif !important; */
+  font-family: 'Electrolize', sans-serif;
+  font-size: 1.4vw !important ; 
+  color: lemonchiffon !important;
+  font-weight: 100 !important; 
+  padding-top: 0 !important;
 }
 
 .header-text-cus
@@ -45,13 +56,14 @@ body
   align-items: center;
   text-align: center;
   /* font-family: 'Tillana', cursive; */
-  font-family: 'Londrina Outline', cursive;
+  /* font-family: 'Londrina Outline', cursive; */
+  font-family: 'Blinker', sans-serif;
 }
 
 .profile-img
 {
   border-radius: 100%;
-  width: 15vw;
+  width: 12vw;
   /* border-style: solid;
   border-width: 3px; */
   border-color: wheat;
@@ -61,26 +73,84 @@ body
 }
 
 
+
+.links-cus
+{
+  /* position: relative !important; */
+  padding-top: 1rem;
+ 
+}
+
+.icon-cus
+{
+  color: whitesmoke;
+  font-size: 1.8vw;
+  margin: 0 1.5rem;
+  /* border-style: solid;
+  border-width: 1px; */
+  /* padding: 2.5px 5px; */
+}
+
+.links-cus a:hover
+{
+  color: rgb(64, 255, 0);
+}
+
+
+
+
+
 .header-text-cus h3
 {
-  font-size: 4.5vw;
-  padding-top: 3rem;
+  font-size: 3.5vw;
+  padding-top: 2rem;
+  color: rgb(231, 208, 208);
 }
+
+
+
+@media screen and (max-width: 800px) 
+{
+  .profile-img
+  {
+    width: 25vw;
+  }
+
+  .header-text-cus h3
+  {
+    font-size: 8.5vw;
+  }
+
+  .typed-cus
+  {
+    font-size: 4.5vw !important;
+  }
+
+  .icon-cus
+  {
+    font-size: 4.5vw !important;
+  }
+}
+
 
 #particles-js
 {
   background-image: url(./img/mountain.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 100vh;
+  /* min-height: 500px; */
 }
 
 
 
 
-/* .navbar-cus
+.navbar-cus
 {
-    padding: 0 5vw;
-    background-color: rgb(102, 102, 102);
-} */
+    position: relative !important;
+}
 
 .navbar
 {
@@ -126,12 +196,13 @@ body
     height: 3px;
     content: "";
     position: absolute;
-    background-color: #00B0DC;
+    background-color: #ff0000;
   }
   
   .nav-link-ltr::before {
     width: 0%;
-    bottom: 10px;
+    bottom: 0px;
+    /* bottom 10px tha  */
   }
   
   .nav-link-ltr:hover::before {
@@ -163,9 +234,16 @@ body
 
 
 
+.nav-black
+{
+  background-color: rgb(0, 0, 0) !important;
+  opacity: 0.8;
+  transition: 1s;
+}
 
-
-
+html {
+  scroll-behavior: smooth;
+}
 
 
 
@@ -286,4 +364,604 @@ body
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+/* About  */
+
+
+.about-me
+{
+  position: relative;
+  display: flex;
+  justify-content: space-evenly !important;
+  background-color: whitesmoke;
+  margin-top: 3rem;
+  margin-left: 0 !important;
+  padding: 0 !important;
+
+}
+
+.about-container
+{
+  position: relative;
+  display: flex;
+  /* flex-direction: column; */
+  width: 100%;
+  justify-content: flex-start;
+  margin-left: 5vw !important;
+}
+
+.about-img
+{
+  width: 40vh;
+  height: auto;
+  margin-right: 3rem;
+  margin-bottom: 1rem;
+  box-shadow: 10px 12px 0.5rem rgba(0,0,0,0.5) !important;
+  
+}
+
+
+.about-text
+{
+  background-color: whitesmoke;
+  font-family: 'Hind', sans-serif;
+  margin: 0 !important;
+  padding: 0 !important;
+  
+  padding-left: 5vw !important;
+}
+
+.about-text h1
+{
+  margin-top: 0rem;
+}
+
+.about-text ul
+{
+  margin-top: 0rem;
+  font-size: 2.2vh;
+}
+
+.about-text ul li
+{
+  padding-top: 1rem;
+}
+
+
+.about-button
+{
+  text-decoration: none;
+  margin: 5vh 0vh;
+  display: flex;
+}
+
+.about-button a
+{
+  margin: 0 3vh;
+  margin-left: 0 !important;
+  font-family: 'Nova Square', cursive;
+  color: whitesmoke;
+  background-color: black;
+  font-weight: 900;
+  font-size: 3vh !important;
+  text-decoration: none !important;
+  /* border-style: solid; */
+  border-width: 1px;
+  border-radius: 8px;
+  padding: 1vh 2.5vh;
+}
+
+.about-button a:hover
+{
+  color: black;
+  background-color: rgb(211, 209, 209);
+  border-style: solid;
+}
+
+.download-cv
+{
+  background-color: whitesmoke !important; 
+  color: black !important; 
+  border-style: solid;
+}
+
+.download-cv:hover
+{
+  background-color: rgb(211, 209, 209) !important;
+}
+
+.personal-details
+{
+  margin: 4vh 2.5vh;
+  display: flex;
+}
+
+.personal-details-right
+{
+  padding-left: 6vh;
+}
+
+.personal-details h2
+{
+  font-size: 2.8vh;
+  padding-top: 1rem;
+  font-weight: 600;
+  font-family: 'Aldrich', sans-serif;
+}
+
+@media screen and (max-width: 800px) 
+{
+  .about-container
+  {
+    flex-direction: column;
+    justify-content: center !important;
+  }
+
+  .about-text
+  {
+    padding-left: 0vw !important;
+    text-align: center;
+    padding-top: 2rem !important;
+    margin: auto auto;
+  }
+
+  .about-text ul
+  {
+    font-size: 2.2vh;
+    text-align: start;
+  }
+
+  .about-img
+  {
+    margin: auto auto;
+  }
+
+  .foto-div
+  {
+    margin: auto auto;
+  }
+
+  .personal-details
+  {
+    text-align: start;
+    display: block;
+  }
+
+  .personal-details-right
+  {
+    padding: 0;
+  }
+
+  
+}
+
+.skills
+{
+  position: relative;
+  padding-top: 4rem;
+  background-image: url(./img/mustang3.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+  /* display: flex; */
+  justify-content: space-evenly !important;
+  text-align: center;
+}
+
+.skills h3
+{
+  margin: auto !important;
+  color: whitesmoke;
+  font-family: 'Nova Square', cursive;
+  font-size: 8vh !important;
+}
+.skills h2
+{
+  margin: auto !important;
+  color: whitesmoke;
+  font-family: 'Nova Square', cursive;
+  font-size: 3.5vh !important;
+}
+
+
+.skill-names
+{
+  font-family: 'Nova Square', cursive;
+  font-size: 4vh !important;
+  margin-top: 5rem;
+  color: rgb(0, 0, 0);
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-evenly;
+  padding-top: 2rem;
+}
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+  .container {
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    background-color: rgba(255, 255, 255, 0.489);  
+  }
+
+  .contact-container
+  {
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    background-color: rgba(0, 0, 0, 0.262)  !important;  
+  }
+
+
+}
+
+
+.skill-text
+{
+  font-family: 'Nova Square', cursive;
+  font-size: 2vh !important;
+}
+
+
+.skill-names .skill-1 .container .progress
+{
+  background-color: rgba(253, 253, 253, 0);
+}
+
+.skill-names .skill-1 .about-container
+{
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.skill-names-md
+{
+  display: none;
+}
+
+.technologies
+{
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.technologies p
+{
+  font-family: 'Aldrich', sans-serif;
+  font-size: 5.5vh;
+  color: rgb(0, 0, 0);
+  margin-bottom: 5rem;
+}
+
+.tech
+{
+  text-align: start;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+  padding: 0 6vw;
+}
+
+.small-tech
+{
+  display: none;
+}
+
+@media screen and (max-width: 900px) 
+{
+  .small-tech
+  {
+    display: block;
+  }
+
+  .large-tech
+  {
+    display: none;
+  }
+}
+
+.tech h1
+{
+  margin-top: 0vh;
+  font-size: 4vh;
+}
+
+.tech h2
+{
+  margin-top: 3vh;
+  font-size: 2.5vh;
+}
+
+.tech h3
+{
+  margin-top: 0vh;
+  font-size: 2.5vh;
+}
+
+.tech h4
+{
+  margin-top: 3vh;
+  font-size: 4vh;
+}
+
+
+
+
+.work
+{
+  background-image: url(./img/macbook-hd.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1000px;
+}
+
+
+.project-nav
+{
+  display: flex;
+  /* flex-direction: column; */
+}
+
+.project-nav-item
+{
+  color: whitesmoke !important;
+  font-family: 'Nova Square', cursive;
+  font-weight: 900;
+  display: flex;
+  padding: 6vw 5vw;
+  margin: 0;
+  font-size: 3vh !important;
+  text-decoration: none;
+}
+
+.project-nav-item a
+{
+  color: whitesmoke !important;
+  padding: 0 1vh !important;
+  text-decoration: none;
+  font-size: 3vh !important;
+}
+
+.work-gallery
+{
+  margin: 8vh 10vh;
+}
+
+.row1
+{
+  display: flex;
+}
+
+.img-gal
+{
+  width: 100%;
+  padding: 1rem 1rem;
+}
+
+.work-gallery-sm
+{
+  display: none;
+}
+
+
+.work-gallery a:hover
+{
+  opacity: 0.4;
+}
+
+
+.ml-work
+{
+  align-items: center;
+  text-align: center;
+  margin-top: 6rem;
+  display: none;
+}
+
+.ml-work p
+{
+  font-size: 8vh;
+  color: whitesmoke;
+  font-family: 'Nova Square', cursive;
+}
+
+
+.contact
+{
+  background-image: url(./img/contact.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1000px;
+  text-align: center;
+}
+
+.contact-container
+{
+  /* padding: 3rem 3rem; */
+  margin-top: 3rem;
+  width: 30% !important;
+  border-radius: 10%;
+  margin-right: auto !important;
+  margin-left: auto !important;
+  margin-bottom: 5rem;
+}
+
+label
+{
+  font-family: 'Electrolize', sans-serif;
+  font-size: 3vh !important;
+  color: rgb(255, 255, 255);
+  text-align: start !important;
+  padding-top: 1rem;
+}
+
+input
+{
+  background-color: rgba(255, 253, 253, 0.351);
+  border-width: 1px;
+  border-radius: 5px;
+  font-family: 'Nova Square', cursive !important;
+  margin-top: 1rem !important;
+  transition: 0.2s;
+  color: whitesmoke;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(193, 193, 193);
+  opacity: 1; /* Firefox */
+}
+
+textarea
+{
+  background-color: rgba(255, 255, 255, 0.351);
+  border-width: 1px;
+  border-radius: 5px;
+  font-family: 'Nova Square', cursive !important;
+  margin-top: 1rem !important;
+  transition: 0.2s;
+}
+
+input:hover
+{
+  padding: 1rem 1rem !important;
+}
+
+#container-id
+{
+  display: flex !important;
+  flex-direction: column !important;
+  width: 100%;
+  padding: 1rem 1rem;
+}
+
+.contact p
+{
+  font-family: 'Aldrich', sans-serif;
+  font-size: 6vh;
+  color: rgb(255, 255, 255);
+  /* margin-bottom: 1rem; */
+  padding-top: 12rem;
+  /* padding-right: 2rem; */
+}
+
+.personal-contact-detail
+{
+  background-color: rgba(0, 0, 0, 0.572);
+  border-radius: 20px;
+  padding: 1rem 1rem;
+  margin-left: auto !important;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-top: 3rem;
+}
+
+.personal-contact-detail h1
+{
+  font-family: 'Aldrich', sans-serif;
+  color: whitesmoke;
+  font-size: 3vh;
+  /* padding-bottom: 2rem; */
+  /* margin: 0; */
+}
+.contact-div
+{
+  display: flex;
+  justify-content: space-around !important;
+}
+
+.whatsapp
+{
+  display: flex;
+  flex-direction: column;
+}
+
+.whatsapp a
+{
+  padding-top: 2rem;
+  /* padding-left: 2rem; */
+}
+
+@media screen and (max-width: 1100px) 
+{
+  #large-skill
+  {
+    display: none;
+  }
+
+  .skill-names-md
+  {
+    display: block;
+  }
+
+  .skills
+  {
+    height: 1000px;
+  }
+
+  .project-nav
+  {
+    flex-direction: column;
+  }
+
+  .project-nav-item a
+  {
+    font-size: 2.0vh !important;
+  }
+
+  .nav-link::before
+  {
+    background-color: rgb(3, 240, 11);
+  }
+
+  .work-gallery
+  {
+    display: none;
+  }
+
+  .work-gallery-sm
+  {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-container
+  {
+    width: 70vw !important;
+  }
+
+  .whatsapp
+  {
+    flex-direction: row;
+    text-align: center !important;
+  }
+
+  .whatsapp a
+  {
+    padding: 0;
+    /* padding-left: 2rem; */
+  }
+
+  .contact-div
+  {
+    flex-direction: column;
+  }
+
+  .personal-contact-detail h1
+  {
+    padding-bottom: 0 !important;
+  }
+}
 
