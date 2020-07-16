@@ -17,7 +17,7 @@ body
 {
     overflow-x: hidden;
     position: relative !important;
-    display: none;
+    /* display: none; */
 }
 
 .header-cus
@@ -110,33 +110,12 @@ body
 
 
 
-@media screen and (max-width: 800px) 
+
+
+
+#particles-js1
 {
-  .profile-img
-  {
-    width: 25vw;
-  }
-
-  .header-text-cus h3
-  {
-    font-size: 8.5vw;
-  }
-
-  .typed-cus
-  {
-    font-size: 4.5vw !important;
-  }
-
-  .icon-cus
-  {
-    font-size: 4.5vw !important;
-  }
-}
-
-
-#particles-js
-{
-  background-image: url(./img/mountain.jpg);
+  background-image: url(./img/bg-photo.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -160,10 +139,49 @@ body
 .navbar-brand
 {
     font-family: 'Tangerine', cursive;
+    background-image: url(./img/MS.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 5vw;
+    height: 10vh;
     color: rgb(167, 167, 167) !important;
     font-size: 40px !important;
 }
 
+@media screen and (max-width: 950px) 
+{
+  .profile-img
+  {
+    width: 25vw;
+  }
+
+  .header-text-cus h3
+  {
+    font-size: 6.5vw !important;
+  }
+
+  .typed-cus
+  {
+    font-size: 4.5vw !important;
+  }
+
+  .icon-cus
+  {
+    font-size: 4.5vw !important;
+  }
+  .navbar-brand
+  {
+    width: 10vw;
+  }
+}
+@media screen and (max-width: 550px) 
+{
+  .navbar-brand
+  {
+    width: 15vw !important;
+  }
+}
 
 .nav-link
 {
@@ -360,7 +378,6 @@ html {
     -webkit-transform: rotate(-45deg); transform: rotate(-45deg);
     -webkit-transition-delay: 0s, 0.2s; transition-delay: 0s, 0.2s;
 }
-
 
 
 
@@ -918,8 +935,14 @@ input:hover
 {
   padding-top: 2rem;
   /* padding-left: 2rem; */
+  color: whitesmoke; font-size: 8vh; padding-right: 1rem;
 }
-
+.whatsapp a:hover
+{
+  padding: 1rem 2rem !important;
+  color: gold !important;
+  transition: 0.5s;
+}
 @media screen and (max-width: 1100px) 
 {
   #large-skill
@@ -970,19 +993,23 @@ input:hover
 
   .whatsapp
   {
-    flex-direction: row;
+    /* flex-direction: row; */
     text-align: center !important;
   }
 
   .whatsapp a
   {
     padding: 0;
-    /* padding-left: 2rem; */
+    padding-left: 0.4rem;
   }
 
   .contact-div
   {
     flex-direction: column;
+  }
+  .contact
+  {
+    height: 1300px;
   }
 
   .personal-contact-detail h1

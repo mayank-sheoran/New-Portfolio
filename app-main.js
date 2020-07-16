@@ -1,10 +1,11 @@
 setTimeout(function(){ 
     $('.loading-screen').css('display', 'none');
-}, 5000); 
+}, 4000); 
 
 setTimeout(function(){ 
     $('.website').css('display', 'block');
-}, 5000);
+    $('.website').css('position', 'static');
+}, 4000);
 
 // setTimeout(function(){ $(elem).css('z-index','2'); },2000)
 
